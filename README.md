@@ -1,16 +1,41 @@
-# hannah_dice
+# 📱 Hannah's TAC 368 Assignments
+This repository contains multiple Flutter projects developed for TAC 368 (Cross Platform Application Development), including:
+* Scrabble (two-computer networked game)
+* Deal or No Deal
+* Chatter (client/server messaging)
+* Other assignments
 
-A new Flutter project.
+## 🚀 How to Run
 
-## Getting Started
+### General Setup
 
-This project is a starting point for a Flutter application.
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd <repo-name>
+flutter run
+```
+2. Install dependencies
+```bash
+flutter pub get
+```
 
-A few resources to get you started if this is your first Flutter project:
+### Troubleshooting
+For MacOS:
+```bash
+cd <repo-name>
+cd macos/Runner/DebugProfile.entitlements
+```
+Add the line:
+```bash
+<key>com.apple.security.network.client</key>
+<true/>
+```
+Then:
+```bash
+flutter clean
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ⚙️ Tech Stack
+Dart, Flutter
